@@ -24,7 +24,6 @@ class Quran extends Model
         'url'
     ];
 
-
     public function author(): BelongsTo
     {
         return $this->belongsTo(Author::class, 'author_id');

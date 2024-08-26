@@ -4,5 +4,5 @@
 
 <x-backpack::menu-item title="Коран" :link="backpack_url('quran')" />
 <x-backpack::menu-item title="Нашиды" :link="backpack_url('nashid')" />
-<x-backpack::menu-item title="Azkars" :link="backpack_url('azkar')" />
+<x-backpack::menu-item title="Азкары" :link="backpack_url('azkar')" />
 

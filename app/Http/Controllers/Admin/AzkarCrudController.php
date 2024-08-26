@@ -19,27 +19,48 @@ class AzkarCrudController extends CrudController
     use \Backpack\CRUD\app\Http\Controllers\Operations\DeleteOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
 
+    private string $language_model;
+    private string $language_model_fields;
+
     /**
      * Configure the CrudPanel object. Apply settings to all operations.
-     * 
+     *
      * @return void
      */
     public function setup()
     {
+        $this->language_model = 'models/Azkar.';
+        $this->language_model_fields = 'models/Azkar.fields.';
+
         CRUD::setModel(\App\Models\Azkar::class);
         CRUD::setRoute(config('backpack.base.route_prefix') . '/azkar');
-        CRUD::setEntityNameStrings('azkar', 'azkars');
+        CRUD::setEntityNameStrings(__($this->language_model . 'entity_name'), __($this->language_model. 'entity_plural_name'));
     }
 
     /**
      * Define what happens when the List operation is loaded.
-     * 
+     *
      * @see  https://backpackforlaravel.com/docs/crud-operation-list-entries
      * @return void
      */
-    protected function setupListOperation()
+    protected function setupListOperation(): void
     {
-        CRUD::setFromDb(); // set columns from db columns.
+        CRUD::addColumns([
+            [
+                'name' => 'id',
+                'label' => __($this->language_model_fields . 'id')
+            ],
+            [
+                'name' => 'title',
+                'label' => __($this->language_model_fields . 'title')
+
+            ],
+            [
+                'name' => 'azkar_type_id',
+                'label' => __($this->language_model_fields . 'azkar_type_id')
+
+            ],
+        ]);
 
         /**
          * Columns can be defined using the fluent syntax:
@@ -47,16 +68,30 @@ class AzkarCrudController extends CrudController
          */
     }
 
+    protected function setupShowOperation()
+    {
+        $this->setupListOperation();
+    }
+
     /**
      * Define what happens when the Create operation is loaded.
-     * 
+     *
      * @see https://backpackforlaravel.com/docs/crud-operation-create
      * @return void
      */
     protected function setupCreateOperation()
     {
         CRUD::setValidation(AzkarRequest::class);
-        CRUD::setFromDb(); // set fields from db columns.
+        CRUD::addFields([
+            [
+                'name' => 'title',
+                'label' => __($this->language_model_fields . 'title')
+            ],
+            [
+                'name' => 'azkar_type_id',
+                'label' => __($this->language_model_fields . 'azkar_type_id'),
+            ],
+        ]);
 
         /**
          * Fields can be defined using the fluent syntax:
@@ -66,7 +101,7 @@ class AzkarCrudController extends CrudController
 
     /**
      * Define what happens when the Update operation is loaded.
-     * 
+     *
      * @see https://backpackforlaravel.com/docs/crud-operation-update
      * @return void
      */
