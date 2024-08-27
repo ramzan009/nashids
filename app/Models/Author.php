@@ -10,7 +10,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Author extends Model
 {
     use HasFactory;
-    use HasFactory;
     use CrudTrait;
     use SoftDeletes;
 
