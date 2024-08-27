@@ -9,7 +9,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Nashid extends Model
 {
-    use HasFactory;
     use CrudTrait;
     use HasFactory;
     use SoftDeletes;

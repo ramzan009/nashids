@@ -13,7 +13,6 @@ class Quran extends Model
 {
     use HasFactory;
     use CrudTrait;
-    use HasFactory;
     use SoftDeletes;
 
     protected $table = 'quran';
