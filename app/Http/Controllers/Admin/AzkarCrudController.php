@@ -56,7 +56,8 @@ class AzkarCrudController extends CrudController
 
             ],
             [
-                'name' => 'azkar_type_id',
+                'name' => 'azkarType',
+                'attribute' => 'alias',
                 'label' => __($this->language_model_fields . 'azkar_type_id')
 
             ],
