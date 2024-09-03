@@ -31,7 +31,7 @@ class AzkarRequest extends FormRequest
             ],
             'azkar_type_id' => [
                 'required',
-                'integer'
+                'string'
             ]
         ];
     }
