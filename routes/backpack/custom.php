@@ -21,6 +21,8 @@ Route::group([
     Route::crud('nashid', 'NashidCrudController');
     Route::crud('azkar-type', 'AzkarTypeCrudController');
     Route::crud('author', 'AuthorCrudController');
+    Route::crud('prayer-time', 'PrayerTimeCrudController');
+
 
 }); // this should be the absolute last line of this file
 
