@@ -6,4 +6,5 @@
 <x-backpack::menu-item title="Нашиды" :link="backpack_url('nashid')" />
 <x-backpack::menu-item title="Азкары" :link="backpack_url('azkar')" />
 <x-backpack::menu-item title="Типы азкаров" :link="backpack_url('azkar-type')" />
+<x-backpack::menu-item title="Время намаза" :link="backpack_url('prayer-time')" />
 
