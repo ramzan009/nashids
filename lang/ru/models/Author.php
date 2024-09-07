@@ -2,8 +2,8 @@
 
 return [
 
-    'entity_name'        => 'Нашид',
-    'entity_plural_name' => 'Нашиды',
+    'entity_name'        => 'Автор',
+    'entity_plural_name' => 'Авторы',
 
     'fields' => [
         'id'         => 'ID',
@@ -11,8 +11,7 @@ return [
         'updated_at' => 'Дата обновления',
         'deleted_at' => 'Дата удаления',
 
-        'title' => 'Название',
-        'url' => 'url',
+        'name' => 'Имя',
     ],
 
 ];

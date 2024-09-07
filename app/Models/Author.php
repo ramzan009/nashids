@@ -17,7 +17,6 @@ class Author extends Model
         'name'
     ];
 
-
     public function author()
     {
         return $this->hasMany(Quran::class, 'author_id');

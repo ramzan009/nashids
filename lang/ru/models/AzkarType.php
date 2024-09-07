@@ -2,7 +2,7 @@
 
 return [
 
-    'entity_name'        => 'Типы азкаров',
+    'entity_name'        => 'Типы азкар',
     'entity_plural_name' => 'Типы азкаров',
 
     'fields' => [
