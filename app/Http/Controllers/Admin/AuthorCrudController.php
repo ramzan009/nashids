@@ -30,7 +30,7 @@ class AuthorCrudController extends CrudController
         $this->language_model_fields = 'models/Author.fields.';
 
         CRUD::setModel(\App\Models\Author::class);
-        CRUD::setRoute(config('backpack.base.route_prefix') . '/author');
+        CRUD::setRoute(config('backpack.base.route_prefix') . '/main');
         CRUD::setEntityNameStrings(__($this->language_model . 'entity_name'), __($this->language_model . 'entity_plural_name'));
     }
 
