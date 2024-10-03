@@ -20,7 +20,7 @@ Route::group([
     Route::crud('quran', 'QuranCrudController');
     Route::crud('nashid', 'NashidCrudController');
     Route::crud('azkar-type', 'AzkarTypeCrudController');
-    Route::crud('author', 'AuthorCrudController');
+    Route::crud('main', 'AuthorCrudController');
     Route::crud('prayer-time', 'PrayerTimeCrudController');
 
 

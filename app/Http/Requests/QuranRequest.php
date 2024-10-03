@@ -27,7 +27,7 @@ class QuranRequest extends FormRequest
                 'required',
                 'string',
             ],
-            'author' => [
+            'main' => [
                 'required',
                 'integer',
             ],

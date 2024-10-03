@@ -52,7 +52,7 @@ class QuranCrudController extends CrudController
                 'label' => __($this->language_model_fields . 'title')
             ],
             [
-                'name' => 'author',
+                'name' => 'main',
                 'label' => __($this->language_model_fields . 'author_id')
 
             ],
@@ -90,7 +90,7 @@ class QuranCrudController extends CrudController
                 'label' => __($this->language_model_fields . 'title'),
             ],
             [
-                'name' => 'author',
+                'name' => 'main',
                 'label' => __($this->language_model_fields . 'author_id'),
             ],
             [
