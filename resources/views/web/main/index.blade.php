@@ -7,4 +7,5 @@
 
 
     @include('layouts.includes.audio', ['title' => 'Коран'])
+
 @endsection

@@ -12,7 +12,7 @@ body {
 }
 
 .container-fluid {
-    width: 1050px;
+    width: 1100px;
 }
 
 .nav-item {
@@ -23,21 +23,24 @@ body {
     width: 60px;
 }
 
+.btn{
+    margin-left: 20px;
+}
 
 //Код для блока аудио
 
 .audios-Class {
     width: 730px;
-    height: 200px;
+    height: 430px;
     background-color: #F8F9FA;
     border: 1px solid #BAB9BB;
     padding: 0 20px 0 20px;
 }
 
-
 .audi-string {
     display: flex;
     margin-bottom: 10px;
+    border: 1px solid #5c6873;
 }
 
 .audi-string:hover {
@@ -81,7 +84,7 @@ body {
 }
 
 .block-time{
-    height: 800px;
+    height: 500px;
 }
 
 .time-class-div {
@@ -91,13 +94,17 @@ body {
 
 .time-class-h1 {
     font-size: 19px;
-    padding-top: 20px;
+    padding-top: 30px;
     text-align: center;
 }
 
 .time-medium {
     display: flex;
-    padding: 20px 20px 10px 20px;
+    padding: 23px 20px 10px 20px;
+}
+
+.ofe{
+    margin-bottom: 5px;
 }
 
 .time-medium-daughter {
@@ -105,8 +112,32 @@ body {
     border-bottom: 1px solid #a0aec0;
 }
 
+.hov{
+    border-bottom: none;
+}
+
+.fore{
+    border-bottom: none!important;
+}
 
 .time-medium-daughter-block{
     width: 40px;
     border-bottom: 1px solid #a0aec0;
+}
+
+
+//Код для Регистрации
+
+.form-label{
+    margin-left: 5px;
+}
+
+
+.form-label{
+    margin-left: 5px;
+}
+
+
+.container{
+    margin-top: -20px;
 }
