@@ -7,6 +7,26 @@
                 <p class="audi-string-p">Имя нашида, или корана</p>
                 <div class="audi-string-div">2:19</div>
             </div>
+            <div class="audi-string">
+                <span class="audi-string-span">1.</span>
+                <p class="audi-string-p">Имя нашида, или корана</p>
+                <div class="audi-string-div">2:19</div>
+            </div>
+            <div class="audi-string">
+                <span class="audi-string-span">1.</span>
+                <p class="audi-string-p">Имя нашида, или корана</p>
+                <div class="audi-string-div">2:19</div>
+            </div>
+            <div class="audi-string">
+                <span class="audi-string-span">1.</span>
+                <p class="audi-string-p">Имя нашида, или корана</p>
+                <div class="audi-string-div">2:19</div>
+            </div>
+            <div class="audi-string">
+                <span class="audi-string-span">1.</span>
+                <p class="audi-string-p">Имя нашида, или корана</p>
+                <div class="audi-string-div">2:19</div>
+            </div>
 
         </div>
         @include('layouts.includes.time')

@@ -15,7 +15,7 @@
                     <a class="nav-link" href="{{ route('quran') }}">Коран</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Нашид</a>
+                    <a class="nav-link" href="{{ route('nashid') }}">Нашид</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -33,6 +33,7 @@
                 <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
                 <button class="btn btn-outline-success" type="submit">Поиск</button>
             </form>
+            <a href="{{ route('registration') }}" class="btn btn-primary">Регистрация</a>
         </div>
     </div>
 </nav>
