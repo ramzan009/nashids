@@ -39,8 +39,9 @@ body {
 
 .audi-string {
     display: flex;
-    margin-bottom: 10px;
-    border: 1px solid #5c6873;
+    margin-bottom: 15px;
+    //border: 1px solid #5c6873;
+    background-color: #a0aec0;
 }
 
 .audi-string:hover {
@@ -50,18 +51,18 @@ body {
 .audi-string-span {
     width: 36px;
     text-align: center;
-    padding-top: 15px;
+    margin-top: 15px;
 }
 
 .audi-string-p {
     width: 580px;
     font-size: 16px;
-    padding-top: 15px;
+    margin-top: 15px;
 }
 
 .audi-string-div {
     text-align: center;
-    padding-top: 15px;
+    margin-top: 15px;
 }
 
 .audios-Class-h1 {

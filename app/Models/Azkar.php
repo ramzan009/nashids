@@ -18,11 +18,16 @@ class Azkar extends Model
 
     protected $fillable = [
         'title',
-        'azkar_type_id'
+        'azkar_type_id',
+        'content_arabic',
+        'content_rus',
+
     ];
 
-    public function azkarType(): BelongsTo
+    public function azkarType()
     {
         return $this->belongsTo(AzkarType::class, 'azkar_type_id');
     }
+
+
 }

@@ -12,7 +12,9 @@ return [
         'deleted_at' => 'Дата удаления',
 
         'title' => 'Название',
-        'azkar_type_id' => 'Тип азкара'
+        'azkar_type_id' => 'Типа азкаров',
+        'content_arabic' => 'Азкары на арабском',
+        'content_rus' => 'Азкары на русском'
     ],
 
 ];
