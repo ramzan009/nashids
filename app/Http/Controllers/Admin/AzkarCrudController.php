@@ -57,8 +57,17 @@ class AzkarCrudController extends CrudController
             ],
             [
                 'name' => 'azkarType',
-                'attribute' => 'alias',
                 'label' => __($this->language_model_fields . 'azkar_type_id')
+
+            ],
+            [
+                'name' => 'content_arabic',
+                'label' => __($this->language_model_fields . 'content_arabic')
+
+            ],
+            [
+                'name' => 'content_rus',
+                'label' => __($this->language_model_fields . 'content_arabic')
 
             ],
         ]);
@@ -89,8 +98,16 @@ class AzkarCrudController extends CrudController
                 'label' => __($this->language_model_fields . 'title')
             ],
             [
-                'name' => 'azkar_type_id',
-                'label' => __($this->language_model_fields . 'azkar_type_id'),
+                'name' => 'azkarType',
+                'label' => __($this->language_model_fields . 'azkar_type_id')
+            ],
+            [
+                'name' => 'content_arabic',
+                'label' => __($this->language_model_fields . 'content_arabic'),
+            ],
+            [
+                'name' => 'content_rus',
+                'label' => __($this->language_model_fields . 'content_rus'),
             ],
         ]);
 

@@ -2,7 +2,9 @@
 
 namespace App\Http\Requests;
 
+use App\Models\AzkarType;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class AzkarRequest extends FormRequest
 {
@@ -29,7 +31,16 @@ class AzkarRequest extends FormRequest
                 'required',
                 'string'
             ],
-            'azkar_type_id' => [
+            'azkarType' => [
+                'required',
+                'integer',
+                Rule::exists(AzkarType::class, 'id')
+            ],
+            'content_arabic' => [
+                'required',
+                'string'
+            ],
+            'content_rus' => [
                 'required',
                 'string'
             ]

@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->foreignId('azkar_type_id')->constrained('azkars');
+            $table->text('content_arabic');
+            $table->text('content_rus');
             $table->softDeletes();
             $table->timestamps();
         });

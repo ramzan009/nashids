@@ -30,5 +30,8 @@
 
         </div>
         @include('layouts.includes.time')
+
     </div>
+
+
 </div>
