@@ -32,7 +32,6 @@ class LoginRequest extends FormRequest
             'password' => [
                 'required',
                 'integer',
-                'exists:' . User::class . ',password'
             ]
         ];
     }

@@ -11,6 +11,8 @@
                     <div class="card" style="border-radius: 1rem;">
                         <div class="row g-1">
                             <div class="col-md-6 col-lg-5 d-none d-md-block">
+
+
 {{--                                <img src="img/photo.jpg"--}}
 {{--                                     alt="login form" class="img-fluid"--}}
 {{--                                     style="width: 490px; height: 585px; margin-top: 1px; border-radius: 10px"/>--}}
@@ -29,7 +31,9 @@
                                             здесь</h5>
 
                                         <div data-mdb-input-init class="form-outline mb-4">
-
+                                            @error('message')
+                                            <label class="form-label" for="form2Example17" style="color: red">{{ $message }}</label>
+                                            @enderror
                                             @error('email')
                                             <label class="form-label" for="form2Example17" style="color: red">{{ $message }}</label>
                                             @enderror
