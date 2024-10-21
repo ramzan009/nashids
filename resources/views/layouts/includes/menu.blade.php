@@ -29,8 +29,9 @@
                     </ul>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+            <form method="POST" action="{{ route('search') }}" class="d-flex" role="search">
+                @csrf
+                <input name="search" class="form-control me-2" type="search" required="" placeholder="Поиск" aria-label="Поиск">
                 <button class="btn btn-outline-success" type="submit">Поиск</button>
             </form>
             <a href="{{ route('registration') }}" class="btn btn-primary">Регистрация</a>
