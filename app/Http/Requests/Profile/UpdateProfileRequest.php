@@ -1,18 +1,19 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Http\Requests\Profile;
 
 use App\Models\User;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\Rule;
 
-class RegistrationCreateRequest extends FormRequest
+class UpdateProfileRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
      */
     public function authorize(): bool
     {
-        // only allow updates if the user is logged in
         return true;
     }
 
@@ -31,10 +32,17 @@ class RegistrationCreateRequest extends FormRequest
             'email' => [
                 'required',
                 'email',
-                'unique:' . User::class . ',email'
+                Rule::unique(User::class, 'email')
+                    ->where(function ($query) {
+                        $query->where('id', '!=', Auth::user()->id);
+                    })
+            ],
+            'old_password' => [
+                'nullable',
+                'integer',
             ],
             'password' => [
-                'required',
+                'nullable',
                 'integer',
                 'confirmed'
             ]
