@@ -7,23 +7,23 @@ body {
 
 //Код для меню
 
-.navbar{
+.navbar {
     border: 1px solid #BAB9BB;
 }
 
 .container-fluid {
-    width: 1100px;
+    width: 1200px;
 }
 
 .nav-item {
-    margin: 0 22px 0 22px;
+    margin: 0 20px 0 20px;
 }
 
 .img-fluid {
     width: 60px;
 }
 
-.btn{
+.btn {
     margin-left: 20px;
 }
 
@@ -31,7 +31,7 @@ body {
 
 .audios-Class {
     width: 730px;
-    height: 430px;
+    height: auto;
     background-color: #F8F9FA;
     border: 1px solid #BAB9BB;
     padding: 0 20px 0 20px;
@@ -72,6 +72,8 @@ body {
 
 .medium-Class {
     display: flex;
+    width: auto;
+    height: auto;
     margin-top: 20px;
     justify-content: center
 }
@@ -84,7 +86,7 @@ body {
     margin-left: 7px;
 }
 
-.block-time{
+.block-time {
     height: 500px;
 }
 
@@ -104,7 +106,7 @@ body {
     padding: 23px 20px 10px 20px;
 }
 
-.ofe{
+.ofe {
     margin-bottom: 5px;
 }
 
@@ -113,15 +115,15 @@ body {
     border-bottom: 1px solid #a0aec0;
 }
 
-.hov{
+.hov {
     border-bottom: none;
 }
 
-.fore{
-    border-bottom: none!important;
+.fore {
+    border-bottom: none !important;
 }
 
-.time-medium-daughter-block{
+.time-medium-daughter-block {
     width: 40px;
     border-bottom: 1px solid #a0aec0;
 }
@@ -129,28 +131,56 @@ body {
 
 //Код для Регистрации
 
-.form-label{
+.form-label {
     margin-left: 5px;
 }
 
-.form-label{
+.form-label {
     margin-left: 5px;
 }
 
-.container{
+.container {
     margin-top: -20px;
 }
 
-.log{
+.log {
     margin-top: 30px;
 }
 
-//для поиска
+.user_icon {
+    width: 30px;
+    height: 25px;
+}
 
-.sear{
+.prof {
+    margin-top: 20px;
+}
+
+
+//Код для поиска
+
+.sear {
     height: auto;
 }
 
-.lab-sear{
+.lab-sear {
     margin-bottom: 20px;
 }
+
+
+//Код для изменений данных
+
+.butt_chang {
+    background-color: #1870FA;
+    border: none;
+    width: 140px;
+    height: 34px;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.butt_chang:hover {
+background-color: #175CCD;
+}
+
+
