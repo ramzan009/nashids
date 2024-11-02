@@ -180,7 +180,60 @@ body {
 }
 
 .butt_chang:hover {
-background-color: #175CCD;
+    background-color: #175CCD;
+}
+
+.delete_account {
+    font-size: 14px;
+    color: red;
+}
+
+.delete{
+    background-color: red;
+}
+
+.delete:hover{
+    background-color: #BB0010;
+}
+
+.avatar{
+    width: 115px;
+}
+
+.avatar_button{
+    width: 128px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #2072F7;
+    color: #FFFFFF;
+    border: none;
+}
+
+.avatar_button:hover{
+    background-color: #175CCD;
+}
+
+.av-inp-p{
+    margin-top: 20px;
+}
+
+.delete-avatar{
+    margin-top: 20px;
+    width: 128px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #2072F7;
+    color: #FFFFFF;
+    border: none;
+}
+
+.delete-avatar:hover{
+    background-color: #175CCD;
 }
 
 
+.img-profile{
+    border-radius: 50%;
+    width: 120px;
+    height: 150px;
+}

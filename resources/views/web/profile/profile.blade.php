@@ -11,9 +11,15 @@
                 <div class="col-lg-4">
                     <div class="card mb-4">
                         <div class="card-body text-center">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
+                            @if($user['avatar'] !== null)
+                                <img src="{{ asset('storage/' . $user->avatar) }}"
                                  alt="avatar"
-                                 class="rounded-circle img-fluid" style="width: 150px;">
+                                 class="rounded-circle img-fluid img-profile" style="width: 150px;">
+                            @else
+                                <img src="{{ asset('img/user.png') }}"
+                                     alt="avatar"
+                                     class="rounded-circle img-fluid img-profile" style="width: 150px;">
+                            @endif
                             <h5 class="my-3">{{ $user->name }}</h5>
                             <p class="text-muted mb-1">{{ $user->email }}</p>
                             <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>

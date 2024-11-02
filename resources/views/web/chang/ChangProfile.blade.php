@@ -9,13 +9,42 @@
             <div class="row prof">
                 <div class="col-lg-4">
                     <div class="card mb-4">
-                        <div class="card-body text-center">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
+                        <div class="card-body text-center img-delete">
+                            @if($user['avatar'] != null )
+                            <img src="{{ asset('storage/' . $user->avatar) }}"
                                  alt="avatar"
-                                 class="rounded-circle img-fluid" style="width: 150px;">
+                                 class="rounded-circle img-fluid img-profile"  style="width: 150px;">
+                            @else
+                                <img src="{{ asset('img/user.png') }}"
+                                     alt="avatar"
+                                     class="rounded-circle img-fluid img-profile" style="width: 150px;">
+                            @endif
+                            <form action="{{ route('profile_change_avatar') }}" method="POST"
+                                  enctype="multipart/form-data">
+                                @method('POST')
+                                @csrf
+                                <p class="text-muted mb-4 av-inp-p">
+                                    <input class="avatar" type="file" name="avatar">
+                                    <button type="submit" class="avatar_button">Обновить</button>
+                                </p>
+                            </form>
+                            <form action="{{ route('profile_avatar_delete') }}" method="POST">
+                                @method('POST')
+                                @csrf
+                                <button type="submit" class="avatar_button">Удалить фоту</button>
+                            </form>
+
                             <h5 class="my-3">{{$user->name}}</h5>
                             <p class="text-muted mb-1">{{$user->email}}</p>
                             <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
+
+                            <form action="{{ route('profile_delete') }}" method="POST">
+                                @csrf
+                                @method('delete')
+                                <div class="d-flex justify-content-center mb-2">
+                                    <button class="butt_chang delete" type="submit">Удалить аккаунт</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
