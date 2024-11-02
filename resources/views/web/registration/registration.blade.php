@@ -34,7 +34,7 @@
                                             @enderror
                                             <input name="name" type="text" id="form2Example18"
                                                    class="form-control form-control-lg"/>
-                                            <label class="form-label" for="form2Example18">Имя </label>
+                                            <label class="form-label" for="form2Example18">Фамилия имя</label>
                                         </div>
 
                                         <div data-mdb-input-init class="form-outline mb-3">
