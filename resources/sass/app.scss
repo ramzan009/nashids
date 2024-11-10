@@ -188,19 +188,19 @@ body {
     color: red;
 }
 
-.delete{
+.delete {
     background-color: red;
 }
 
-.delete:hover{
+.delete:hover {
     background-color: #BB0010;
 }
 
-.avatar{
+.avatar {
     width: 115px;
 }
 
-.avatar_button{
+.avatar_button {
     width: 128px;
     height: 30px;
     border-radius: 4px;
@@ -209,15 +209,15 @@ body {
     border: none;
 }
 
-.avatar_button:hover{
+.avatar_button:hover {
     background-color: #175CCD;
 }
 
-.av-inp-p{
+.av-inp-p {
     margin-top: 20px;
 }
 
-.delete-avatar{
+.delete-avatar {
     margin-top: 20px;
     width: 128px;
     height: 30px;
@@ -227,13 +227,55 @@ body {
     border: none;
 }
 
-.delete-avatar:hover{
+.delete-avatar:hover {
     background-color: #175CCD;
 }
 
 
-.img-profile{
+.img-profile {
     border-radius: 50%;
     width: 120px;
     height: 150px;
 }
+
+
+//Код для азкара
+
+.block-az-2 {
+    margin: 30px auto;
+    width: 700px;
+    background-color: #F8F9FA;
+}
+
+.block-value-h1{
+    font-size: 30px;
+    padding: 30px 0 25px 40px;
+    border-bottom: 1px solid #5c6873;
+    color: #575757;
+}
+
+.block-value-p-div{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #5c6873;
+}
+
+.block-value-p{
+    width: 650px;
+    padding: 20px 45px 10px 0;
+    font-size: 25px;
+    text-align: right;
+    font-family: "Noto Naskh Arabic", serif;
+    line-height: 45px;
+    font-weight: 600;
+    color: #575757;
+}
+
+.block-value-div{
+    width: 600px;
+    margin: 20px 0 0 45px;
+    font-size: 20px;
+    padding-bottom: 30px;
+    color: #575757;
+}
+

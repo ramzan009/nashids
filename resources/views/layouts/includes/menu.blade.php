@@ -22,9 +22,9 @@
                         Азкары
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Утренние азкары</a></li>
-                        <li><a class="dropdown-item" href="#">Вечерние азкары</a></li>
-                        <li><a class="dropdown-item" href="#">После молитвы азкары</a></li>
+                        <li><a class="dropdown-item" href="{{ route('azkar_morning') }}">Утренние азкары</a></li>
+                        <li><a class="dropdown-item" href="{{ route('azkar_evening') }}">Вечерние азкары</a></li>
+                        <li><a class="dropdown-item" href="{{ route('after_azkara_prayer') }}">После молитвы азкары</a></li>
                     </ul>
                 </li>
             </ul>
