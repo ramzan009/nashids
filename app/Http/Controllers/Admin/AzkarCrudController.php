@@ -29,8 +29,8 @@ class AzkarCrudController extends CrudController
      */
     public function setup()
     {
-        $this->language_model = 'models/Azkar.';
-        $this->language_model_fields = 'models/Azkar.fields.';
+        $this->language_model = 'models/azkar.';
+        $this->language_model_fields = 'models/azkar.fields.';
 
         CRUD::setModel(\App\Models\Azkar::class);
         CRUD::setRoute(config('backpack.base.route_prefix') . '/azkar');

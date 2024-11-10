@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\Web\Azkar\AfterAzkarPrayerController;
+use App\Http\Controllers\Web\Azkar\EveningController;
+use App\Http\Controllers\Web\Azkar\MorningAzkarController;
 use App\Http\Controllers\Web\Login\LoginController;
 use App\Http\Controllers\Web\Main\IndexController;
 use App\Http\Controllers\Web\Nashid\NashidController;
-use App\Http\Controllers\Web\Profile\ChangProfileController;
 use App\Http\Controllers\Web\Profile\ProfileController;
 use App\Http\Controllers\Web\Quran\QuranController;
 use App\Http\Controllers\Web\Registration\RegistrationController;
@@ -33,5 +35,8 @@ Route::group(['middleware' => 'auth'], function () {
 Route::get('/', [IndexController::class, 'index'])->name('index');
 Route::get('/quran', [QuranController::class, 'index'])->name('quran');
 Route::get('/nashid', [NashidController::class, 'index'])->name('nashid');
+Route::get('/azkar/morning', [MorningAzkarController::class, 'index'])->name('azkar_morning');
+Route::get('/azkar/evening', [EveningController::class, 'index'])->name('azkar_evening');
+Route::get('/azkar/after', [AfterAzkarPrayerController::class, 'index'])->name('after_azkara_prayer');
 Route::post('/search', [SearchController::class, 'search'])->name('search');
 

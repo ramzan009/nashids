@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('azkars', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
             $table->foreignId('azkar_type_id')->constrained('azkars');
             $table->text('content_arabic');
             $table->text('content_rus');

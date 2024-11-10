@@ -14,6 +14,10 @@ class AzkarType extends Model
     use CrudTrait;
     use SoftDeletes;
 
+    const MORNING_ALIAS = 'morning';
+    const EVENING_ALIAS = 'evening';
+    const AFTER_PRATER_ALIAS = 'afterPrayer';
+
     protected $table = 'azkar_types';
 
     protected $fillable = [
